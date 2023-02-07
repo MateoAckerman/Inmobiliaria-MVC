@@ -1,0 +1,95 @@
+@include tablet {
+  .contenedor-anuncios {
+    // @include grid(3, 2rem);
+    // align-items: flex-start;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.anuncio {
+  background-color: lighten($gris, 5);
+  border: 1px solid darken($gris, 15);
+  border-radius: 0 0 1.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+
+  .contenido-anuncio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    h3,
+    p {
+      margin: 0;
+    }
+  }
+}
+.precio {
+  color: $azul;
+  padding: 0.5rem 0;
+  font-weight: $bold;
+  font-size: 3.5rem;
+  text-align: center;
+
+  text-shadow: 0 0 20px $amarillo;
+}
+
+.iconos-caracteristicas {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  max-width: 500px;
+  li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    img {
+      // flex: 0 0;
+      width: 40px;
+      margin-right: 1rem;
+    }
+    p {
+      font-weight: $black;
+    }
+  }
+}
+
+.resumen-inmueble {
+  background-color: darken($gris, 10);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  .precio {
+    font-size: 4.5rem;
+  }
+  .iconos-caracteristicas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include tablet {
+    }
+    li {
+      img {
+        width: 5.5rem;
+      }
+      p {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .descrip {
+    padding: 0 4rem;
+  }
+}

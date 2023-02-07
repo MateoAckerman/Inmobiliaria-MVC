@@ -1,0 +1,92 @@
+.boton-amarillo {
+  @include boton($amarillo, inline-block);
+}
+.boton-amarillo-block {
+  @include boton($amarillo, block);
+  border-radius: 4px;
+}
+.boton-amarillo-panel {
+  color: $blanco;
+  background-color: $amarillo;
+  font-weight: $bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: calc($separacion / 2);
+  display: inline-block;
+  // border: 2px solid $amarillo;
+  border-radius: 8px;
+  &:hover {
+    color: $blanco;
+    background-color: darken($amarillo, 10);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+.boton-verde {
+  @include boton($verde, inline-block);
+}
+.boton-verde-panel {
+  color: $verde;
+  font-weight: $bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: calc($separacion / 2);
+  display: inline-block;
+  border: 2px solid $verde;
+  border-radius: 8px;
+  &:hover {
+    color: $blanco;
+    background-color: darken($verde, 10);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+.boton-verde-block {
+  @include boton($verde, block);
+}
+.boton-azul {
+  @include boton($azul, inline-block);
+}
+.boton-azul-block {
+  @include boton($azul, block);
+}
+.boton-rojo {
+  @include boton($rojo, inline-block);
+}
+.boton-rojo-block {
+  @include boton($rojo, block);
+}
+.boton-rojo-block-panel {
+  @include boton($rojo, inline-block);
+  margin-top: 0.5rem;
+
+  svg {
+    width: 25px;
+    fill: white;
+  }
+}
+.boton-amarillo-block-panel {
+  @include boton($amarillo, inline-block);
+  margin-top: 0.5rem;
+
+  svg {
+    width: 25px;
+    fill: white;
+  }
+}
+.boton-hide {
+  display: none;
+}
+.b-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  fill: $verde;
+
+  &:hover {
+    fill: white;
+  }
+}

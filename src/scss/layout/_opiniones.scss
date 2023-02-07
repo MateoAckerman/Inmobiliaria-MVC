@@ -1,0 +1,28 @@
+.opinion {
+  background-color: $azul;
+  font-size: 2rem;
+  padding: 2rem;
+  color: $blanco;
+  border-radius: 2rem;
+
+  blockquote {
+    padding-left: 2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url(../img/comilla.svg);
+      background-repeat: no-repeat;
+      width: 6rem;
+      height: 7rem;
+      position: absolute;
+      left: -4rem;
+      top: -1rem;
+    }
+  }
+  p {
+    text-align: end;
+    padding: 0 1rem;
+  }
+}

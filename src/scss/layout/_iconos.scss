@@ -1,0 +1,48 @@
+.iconos-nosotros {
+  @include tablet {
+    @include grid(3, 4rem);
+  }
+  .icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    text-align: center;
+    background-color: $azul;
+    border-radius: 5px;
+    color: $blanco;
+    img {
+      // height: 10rem;
+      width: 12rem;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    p {
+      color: $blanco;
+    }
+  }
+}
+.iconos-valores {
+  @include tablet {
+    @include grid(4, 3rem);
+    padding: 2rem 0;
+  }
+  .icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    img {
+      width: 10rem;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 2.6rem;
+    }
+  }
+}

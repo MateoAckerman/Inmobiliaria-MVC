@@ -1,0 +1,42 @@
+.contenido-nosotros {
+  @include tablet {
+    @include grid(2, 2rem);
+  }
+}
+.texto-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.texto-nosotros blockquote {
+  font-weight: $black;
+  font-size: 2rem;
+  margin: 0;
+  padding-left: 1rem 0 3rem 0;
+}
+.valores {
+  padding: 3rem 0;
+  @include tablet {
+    padding: 0 0 3rem 0;
+  }
+  background-color: #00153aeb;
+  margin-bottom: 0;
+  color: $blanco;
+  img {
+    fill: $blanco;
+  }
+  p {
+    color: $blanco;
+  }
+}
+
+.contenido-equipo {
+  @include tablet {
+    @include grid(2, 2rem);
+  }
+}
+.texto-equipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
